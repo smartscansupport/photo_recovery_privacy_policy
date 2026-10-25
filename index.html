@@ -1,0 +1,1012 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Official Privacy Policy for Photo Recovery &amp; Restore (PhotoRecover). 100% on-device photo recovery with zero external data collection." />
+  <meta name="robots" content="index, follow" />
+  <title>Privacy Policy — Photo Recovery &amp; Restore (PhotoRecover)</title>
+  <style>
+    :root {
+      --primary: #3157f5;
+      --primary-dark: #1737c7;
+      --primary-soft: rgba(49, 87, 245, 0.09);
+      --primary-border: rgba(49, 87, 245, 0.22);
+      --protection: #14b8a6;
+      --protection-soft: rgba(20, 184, 166, 0.10);
+      --verified: #12b76a;
+      --verified-soft: rgba(18, 183, 106, 0.11);
+      --warning: #f79009;
+      --bg: #f6f8fc;
+      --bg-accent: radial-gradient(1100px 440px at 15% -8%, rgba(49, 87, 245, 0.11), transparent 65%),
+                   radial-gradient(900px 380px at 88% -6%, rgba(20, 184, 166, 0.09), transparent 60%);
+      --surface: #ffffff;
+      --surface-subtle: #f1f5fb;
+      --surface-hero: linear-gradient(135deg, #eef3ff 0%, #f9fbff 100%);
+      --text: #141f36;
+      --text-secondary: #4c5b78;
+      --text-muted: #687794;
+      --border: #dce4f2;
+      --border-strong: #c8d6ee;
+      --shadow-sm: 0 4px 16px rgba(20, 31, 54, 0.045);
+      --shadow-md: 0 14px 36px rgba(23, 55, 199, 0.075);
+      --code-bg: #edf2fc;
+      --code-text: #1c39bb;
+      --header-bg: rgba(255, 255, 255, 0.86);
+    }
+
+    html[data-theme="dark"] {
+      --primary: #829dff;
+      --primary-dark: #3157f5;
+      --primary-soft: rgba(130, 157, 255, 0.14);
+      --primary-border: rgba(130, 157, 255, 0.30);
+      --protection: #2dd4bf;
+      --protection-soft: rgba(45, 212, 191, 0.14);
+      --verified: #34d399;
+      --verified-soft: rgba(52, 211, 153, 0.14);
+      --bg: #080d1a;
+      --bg-accent: radial-gradient(1100px 440px at 15% -8%, rgba(49, 87, 245, 0.22), transparent 65%),
+                   radial-gradient(900px 380px at 88% -6%, rgba(20, 184, 166, 0.14), transparent 60%);
+      --surface: #11192b;
+      --surface-subtle: #162138;
+      --surface-hero: linear-gradient(135deg, #172749 0%, #101a32 100%);
+      --text: #eef3ff;
+      --text-secondary: #b5c3de;
+      --text-muted: #8b9bb9;
+      --border: #253450;
+      --border-strong: #354c75;
+      --shadow-sm: 0 6px 20px rgba(0, 0, 0, 0.28);
+      --shadow-md: 0 18px 42px rgba(0, 0, 0, 0.38);
+      --code-bg: #1a2742;
+      --code-text: #a5baff;
+      --header-bg: rgba(12, 19, 35, 0.86);
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, "Helvetica Neue", Arial, sans-serif;
+      background-color: var(--bg);
+      background-image: var(--bg-accent);
+      background-attachment: fixed;
+      color: var(--text);
+      line-height: 1.68;
+      font-size: 16px;
+    }
+
+    a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+      font-size: 0.88em;
+      padding: 2px 7px;
+      border-radius: 7px;
+      background: var(--code-bg);
+      color: var(--code-text);
+      word-break: break-word;
+    }
+
+    /* Sticky Top Navigation */
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      background: var(--header-bg);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .topbar-inner {
+      max-width: 1140px;
+      margin: 0 auto;
+      padding: 14px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      color: var(--text);
+    }
+
+    .brand:hover {
+      text-decoration: none;
+    }
+
+    .brand-badge {
+      width: 40px;
+      height: 40px;
+      border-radius: 13px;
+      background: linear-gradient(135deg, #3157f5 0%, #1737c7 100%);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: #ffffff;
+      box-shadow: 0 6px 16px rgba(49, 87, 245, 0.30);
+      flex-shrink: 0;
+    }
+
+    .brand-title {
+      font-size: 1.18rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+    }
+
+    .brand-title span {
+      color: var(--primary);
+    }
+
+    .brand-sub {
+      display: block;
+      font-size: 0.76rem;
+      font-weight: 600;
+      color: var(--text-muted);
+    }
+
+    .topbar-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .theme-btn {
+      appearance: none;
+      border: 1px solid var(--border);
+      background: var(--surface);
+      color: var(--text);
+      border-radius: 999px;
+      padding: 8px 14px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      transition: border-color 0.18s ease, transform 0.18s ease;
+    }
+
+    .theme-btn:hover {
+      border-color: var(--primary);
+    }
+
+    /* Hero Banner */
+    .container {
+      max-width: 1140px;
+      margin: 0 auto;
+      padding: 28px 20px 64px;
+    }
+
+    .hero {
+      background: var(--surface-hero);
+      border: 1.2px solid var(--border-strong);
+      border-radius: 28px;
+      padding: 34px 32px;
+      box-shadow: var(--shadow-md);
+      margin-bottom: 26px;
+    }
+
+    .hero-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 13px;
+      border-radius: 999px;
+      background: var(--verified-soft);
+      color: var(--verified);
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 0.01em;
+      margin-bottom: 16px;
+    }
+
+    .hero h1 {
+      margin: 0 0 12px;
+      font-size: clamp(1.75rem, 3.4vw, 2.5rem);
+      line-height: 1.18;
+      letter-spacing: -0.025em;
+    }
+
+    .hero-lead {
+      margin: 0 0 22px;
+      max-width: 780px;
+      font-size: 1.05rem;
+      color: var(--text-secondary);
+    }
+
+    .meta-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .meta-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      padding: 7px 14px;
+      border-radius: 999px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      font-size: 0.84rem;
+      font-weight: 600;
+      color: var(--text-secondary);
+    }
+
+    .meta-pill strong {
+      color: var(--text);
+    }
+
+    /* Quick Highlights */
+    .highlights {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+      margin-bottom: 28px;
+    }
+
+    .highlight-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      padding: 18px 18px;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .highlight-icon {
+      width: 38px;
+      height: 38px;
+      border-radius: 12px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 10px;
+      background: var(--primary-soft);
+      color: var(--primary);
+    }
+
+    .highlight-icon.teal {
+      background: var(--protection-soft);
+      color: var(--protection);
+    }
+
+    .highlight-icon.green {
+      background: var(--verified-soft);
+      color: var(--verified);
+    }
+
+    .highlight-card h2 {
+      margin: 0 0 5px;
+      font-size: 0.98rem;
+      font-weight: 700;
+    }
+
+    .highlight-card p {
+      margin: 0;
+      font-size: 0.86rem;
+      color: var(--text-secondary);
+      line-height: 1.5;
+    }
+
+    /* Main Layout: Sidebar TOC + Policy Content */
+    .layout {
+      display: grid;
+      grid-template-columns: 270px minmax(0, 1fr);
+      gap: 24px;
+      align-items: start;
+    }
+
+    .toc {
+      position: sticky;
+      top: 84px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      padding: 18px;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .toc-title {
+      margin: 0 0 10px;
+      font-size: 0.82rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--text-muted);
+      font-weight: 800;
+    }
+
+    .toc-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .toc-list a {
+      display: block;
+      padding: 7px 11px;
+      border-radius: 10px;
+      font-size: 0.87rem;
+      font-weight: 600;
+      color: var(--text-secondary);
+      transition: background 0.16s ease, color 0.16s ease;
+    }
+
+    .toc-list a:hover,
+    .toc-list a.active {
+      background: var(--primary-soft);
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+
+    .policy-section {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 26px 28px;
+      box-shadow: var(--shadow-sm);
+      scroll-margin-top: 90px;
+    }
+
+    .section-num {
+      display: inline-block;
+      font-size: 0.78rem;
+      font-weight: 800;
+      color: var(--primary);
+      background: var(--primary-soft);
+      padding: 3px 10px;
+      border-radius: 999px;
+      margin-bottom: 8px;
+    }
+
+    .policy-section h2 {
+      margin: 0 0 12px;
+      font-size: 1.32rem;
+      line-height: 1.3;
+      letter-spacing: -0.015em;
+    }
+
+    .policy-section h3 {
+      margin: 18px 0 8px;
+      font-size: 1.03rem;
+      color: var(--text);
+    }
+
+    .policy-section p {
+      margin: 0 0 13px;
+      color: var(--text-secondary);
+    }
+
+    .policy-section p:last-child {
+      margin-bottom: 0;
+    }
+
+    .policy-section ul {
+      margin: 8px 0 14px;
+      padding-left: 20px;
+      color: var(--text-secondary);
+    }
+
+    .policy-section li {
+      margin-bottom: 8px;
+    }
+
+    .policy-section li strong {
+      color: var(--text);
+    }
+
+    .callout {
+      border-radius: 16px;
+      padding: 15px 18px;
+      background: var(--surface-subtle);
+      border-left: 4px solid var(--primary);
+      margin: 14px 0;
+      font-size: 0.94rem;
+      color: var(--text-secondary);
+    }
+
+    .callout.teal {
+      border-left-color: var(--protection);
+    }
+
+    .callout strong {
+      color: var(--text);
+    }
+
+    /* Data Safety Table */
+    .table-wrap {
+      overflow-x: auto;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      margin-top: 12px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.92rem;
+    }
+
+    th, td {
+      text-align: left;
+      padding: 13px 16px;
+      border-bottom: 1px solid var(--border);
+      vertical-align: top;
+    }
+
+    th {
+      background: var(--surface-subtle);
+      font-weight: 700;
+      color: var(--text);
+      font-size: 0.84rem;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+    }
+
+    tr:last-child td {
+      border-bottom: none;
+    }
+
+    td {
+      color: var(--text-secondary);
+    }
+
+    .status-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 3px 10px;
+      border-radius: 999px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      background: var(--verified-soft);
+      color: var(--verified);
+      white-space: nowrap;
+    }
+
+    /* Bottom Developer & Support Contact Card */
+    .contact-card-featured {
+      background: var(--surface-hero);
+      border: 1.4px solid var(--border-strong);
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 14px;
+      margin-top: 16px;
+    }
+
+    .contact-item {
+      padding: 16px 18px;
+      border-radius: 18px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+    }
+
+    .contact-label {
+      display: block;
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: var(--text-muted);
+      margin-bottom: 6px;
+    }
+
+    .contact-value {
+      display: inline-block;
+      font-size: 1.02rem;
+      font-weight: 700;
+      color: var(--text);
+      word-break: break-word;
+    }
+
+    a.contact-value {
+      color: var(--primary);
+    }
+
+    .copy-btn {
+      margin-top: 10px;
+      appearance: none;
+      border: 1px solid var(--primary-border);
+      background: var(--primary-soft);
+      color: var(--primary);
+      border-radius: 999px;
+      padding: 6px 13px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    .copy-btn:hover {
+      border-color: var(--primary);
+    }
+
+    footer {
+      margin-top: 36px;
+      text-align: center;
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+      padding: 24px 16px 8px;
+      border-top: 1px solid var(--border);
+    }
+
+    footer p {
+      margin: 4px 0;
+    }
+
+    @media (max-width: 960px) {
+      .highlights {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+      .layout {
+        grid-template-columns: 1fr;
+      }
+      .toc {
+        position: static;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .hero {
+        padding: 24px 20px;
+        border-radius: 22px;
+      }
+      .highlights {
+        grid-template-columns: 1fr;
+      }
+      .policy-section {
+        padding: 20px 18px;
+        border-radius: 20px;
+      }
+      .topbar-inner {
+        padding: 12px 16px;
+      }
+    }
+
+    @media print {
+      .topbar, .toc, .copy-btn {
+        display: none !important;
+      }
+      body {
+        background: #ffffff;
+        color: #000000;
+      }
+      .hero, .policy-section, .highlight-card {
+        box-shadow: none;
+        break-inside: avoid;
+      }
+      .layout {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a href="#top" class="brand" aria-label="PhotoRecover Privacy Policy">
+        <span class="brand-badge" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="3" width="18" height="18" rx="4"></rect>
+            <circle cx="8.5" cy="8.5" r="1.6"></circle>
+            <path d="M21 15l-4.5-4.5a1.5 1.5 0 0 0-2.12 0L6 19"></path>
+          </svg>
+        </span>
+        <span>
+          <span class="brand-title">Photo<span>Recover</span></span>
+          <span class="brand-sub">Photo Recovery &amp; Restore · Official Privacy Policy</span>
+        </span>
+      </a>
+      <div class="topbar-actions">
+        <button type="button" class="theme-btn" id="themeToggle" aria-label="Switch color theme">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+          </svg>
+          <span id="themeLabel">Dark mode</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top" class="container">
+    <section class="hero" aria-labelledby="policy-heading">
+      <div class="hero-eyebrow">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+          <path d="m9 12 2 2 4-4"></path>
+        </svg>
+        100% On-Device Processing · Zero Cloud Uploads
+      </div>
+      <h1 id="policy-heading">Privacy Policy for Photo Recovery &amp; Restore</h1>
+      <p class="hero-lead">
+        <strong>Photo Recovery &amp; Restore</strong> (displayed in-app as <strong>PhotoRecover</strong>) is built with a strict privacy-first, offline-only architecture. Every photo scan, preview, cleanup check, Recovery Shield backup, and file restore runs locally on your Android phone—your photos and personal files are never uploaded to any external server.
+      </p>
+      <div class="meta-pills">
+        <span class="meta-pill"><strong>Effective &amp; Updated:</strong> October 25, 2026</span>
+        <span class="meta-pill"><strong>Platform:</strong> Android (8.0 – 16)</span>
+      </div>
+    </section>
+
+    <section class="highlights" aria-label="Privacy highlights">
+      <div class="highlight-card">
+        <div class="highlight-icon green" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="3" width="20" height="14" rx="2"></rect>
+            <path d="M8 21h8"></path>
+            <path d="M12 17v4"></path>
+          </svg>
+        </div>
+        <h2>Local-Only Engine</h2>
+        <p>All photo scanning, header verification, and restoration happen exclusively inside your device.</p>
+      </div>
+      <div class="highlight-card">
+        <div class="highlight-icon" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="1" y1="1" x2="23" y2="23"></line>
+            <path d="M16.72 11.06A10.94 10.94 0 0 1 19 12.55"></path>
+            <path d="M5 12.55a10.94 10.94 0 0 1 5.17-2.39"></path>
+            <path d="M10.71 5.05A16 16 0 0 1 22.58 9"></path>
+            <path d="M1.42 9a15.91 15.91 0 0 1 4.7-2.88"></path>
+            <path d="M8.53 16.11a6 6 0 0 1 6.95 0"></path>
+            <line x1="12" y1="20" x2="12.01" y2="20"></line>
+          </svg>
+        </div>
+        <h2>No Internet Permission</h2>
+        <p>The production app does not request <code>INTERNET</code> access and cannot transmit your photos online.</p>
+      </div>
+      <div class="highlight-card">
+        <div class="highlight-icon teal" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+          </svg>
+        </div>
+        <h2>No Ads or Trackers</h2>
+        <p>Zero third-party advertising networks, behavioral profiling SDKs, or external analytics trackers.</p>
+      </div>
+      <div class="highlight-card">
+        <div class="highlight-icon" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 6h18"></path>
+            <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6"></path>
+            <path d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+          </svg>
+        </div>
+        <h2>Full User Control</h2>
+        <p>Revoke storage access, remove Shield copies, or erase all local app data anytime in Android Settings.</p>
+      </div>
+    </section>
+
+    <div class="layout">
+      <nav class="toc" aria-label="Table of contents">
+        <p class="toc-title">Contents</p>
+        <ul class="toc-list">
+          <li><a href="#scope">1. Scope &amp; Overview</a></li>
+          <li><a href="#information-accessed">2. Information Accessed &amp; Why</a></li>
+          <li><a href="#permissions">3. Android Permissions</a></li>
+          <li><a href="#features">4. Shield, Restore &amp; Cleanup</a></li>
+          <li><a href="#retention">5. Retention &amp; Data Deletion</a></li>
+          <li><a href="#sharing">6. Data Sharing &amp; Security</a></li>
+          <li><a href="#data-safety">7. Google Play Data Safety</a></li>
+          <li><a href="#children">8. Children’s Privacy</a></li>
+          <li><a href="#your-rights">9. Your Privacy Rights</a></li>
+          <li><a href="#changes">10. Changes to This Policy</a></li>
+          <li><a href="#contact">11. Developer &amp; Contact</a></li>
+        </ul>
+      </nav>
+
+      <article class="content">
+        <section id="scope" class="policy-section">
+          <span class="section-num">Section 01</span>
+          <h2>Scope &amp; Overview</h2>
+          <p>
+            This Privacy Policy describes how the Android mobile application <strong>Photo Recovery &amp; Restore</strong> (in-app brand name <strong>PhotoRecover</strong>) handles information on your device.
+          </p>
+          <p>
+            We respect your privacy and adhere strictly to Google Play Store Developer Program Policies, including the User Data Policy, Permissions and APIs that Access Sensitive Information Policy, and All Files Access Policy. Because Photo Recovery &amp; Restore operates completely offline on your phone, <strong>we do not collect, transmit, store on external servers, sell, or share any personal data or media files.</strong>
+          </p>
+        </section>
+
+        <section id="information-accessed" class="policy-section">
+          <span class="section-num">Section 02</span>
+          <h2>Information Accessed On-Device &amp; Why</h2>
+          <p>
+            When—and only when—you initiate a photo recovery scan, Smart Cleanup check, or Recovery Shield action, the app reads image files and associated file metadata stored on your device solely to perform the requested feature:
+          </p>
+          <ul>
+            <li><strong>Image Files &amp; Binary Headers:</strong> Inspected locally to verify valid image signatures (such as JPEG, PNG, WebP, HEIC/HEIF, GIF, BMP, and DNG/RAW headers), decode bounded thumbnails for preview, and extract recoverable embedded images from accessible cache or thumbnail containers.</li>
+            <li><strong>File &amp; Media Metadata:</strong> Includes file names, byte sizes, pixel dimensions, modification/creation timestamps, storage paths, Android <code>MediaStore</code> IDs, trash status flags, <code>content://</code> URIs, and local SHA-256 content digests.</li>
+            <li><strong>Device Storage Capacity Metrics:</strong> Total and available internal storage bytes read via Android’s standard <code>StatFs</code> API solely to display the storage usage summary bar on the Home screen.</li>
+          </ul>
+          <div class="callout">
+            <strong>Transparent Recovery Accuracy:</strong> A file’s absence from Android’s gallery index is never treated as proof that it was recently deleted. Photo Recovery &amp; Restore distinguishes Android system-trash items from accessible cached, thumbnail, messaging, and residual storage copies (<em>Possible Recovery</em>) and does not claim guaranteed recovery of storage blocks that have already been overwritten by the operating system.
+          </div>
+        </section>
+
+        <section id="permissions" class="policy-section">
+          <span class="section-num">Section 03</span>
+          <h2>Android Permissions Explained (Android 8 – Android 16)</h2>
+          <p>
+            Photo Recovery &amp; Restore requests only the Android permissions required for its core photo recovery, restoration, and cleanup functionality across Android 8.0 (API 26) through Android 16 (API 36):
+          </p>
+          <ul>
+            <li>
+              <strong><code>android.permission.READ_MEDIA_IMAGES</code> (Android 13+):</strong>
+              Allows the app to read accessible gallery images so it can avoid showing existing library photos as deleted candidates and run Smart Cleanup (Duplicate, Old, and Large Photos).
+            </li>
+            <li>
+              <strong><code>android.permission.READ_MEDIA_VISUAL_USER_SELECTED</code> (Android 14+):</strong>
+              Supports Android’s granular Selected Photos access mode when you choose to grant access only to specific images.
+            </li>
+            <li>
+              <strong><code>android.permission.READ_EXTERNAL_STORAGE</code> (Android 8–12, <code>maxSdkVersion="32"</code>) &amp; <code>WRITE_EXTERNAL_STORAGE</code> (Android 8–9, <code>maxSdkVersion="28"</code>):</strong>
+              Required on legacy Android versions to scan shared storage images and save restored photo copies into <code>Pictures/Photo Recovery &amp; Restore</code>.
+            </li>
+            <li>
+              <strong><code>android.permission.MANAGE_EXTERNAL_STORAGE</code> (All Files Access, Android 11+):</strong>
+              Requested only after showing a clear in-app explanation and directing you to Android’s official system permission screen. This permission enables the one-click recovery engine to locate recoverable image files stored outside standard <code>MediaStore</code> indexes—such as hidden directories, residual app caches, thumbnail stores, and unindexed shared-storage folders.
+            </li>
+          </ul>
+          <div class="callout teal">
+            <strong>Strict Permission Safeguards:</strong> We never use storage permissions in the background without user initiation, never modify or delete files during a recovery scan, never request root privileges, and never access other applications’ private internal sandboxes (<code>/data/data</code>). You may revoke any permission at any time in <strong>Android Settings &gt; Apps &gt; Photo Recovery &amp; Restore &gt; Permissions</strong>.
+          </div>
+        </section>
+
+        <section id="features" class="policy-section">
+          <span class="section-num">Section 04</span>
+          <h2>Recovery Shield, Restored Photos &amp; Smart Cleanup</h2>
+          <h3>Recovery Shield (Private Local Backup)</h3>
+          <p>
+            When you explicitly select photos to protect with <strong>Recovery Shield</strong>, the app stores a verified copy and its SHA-256 integrity record inside the app’s private internal storage directory on your device. Android Auto Backup is disabled (<code>android:allowBackup="false"</code>), ensuring protected copies are never silently uploaded to cloud backup servers.
+          </p>
+          <h3>Saving Recovered Photos ("Save a copy")</h3>
+          <p>
+            Restoring a photo runs only when you tap restore/save. It writes a verified new copy into shared storage (<code>Pictures/Photo Recovery &amp; Restore</code> via Android <code>MediaStore</code>, or a folder you explicitly authorize) and never deletes or alters the original source file. To show your <strong>Recovered Photos</strong> history screen, the app stores lightweight local metadata (restored <code>content://</code> URI, display name, MIME type, source label, and timestamp)—not duplicate raw image bytes.
+          </p>
+          <h3>Smart Cleanup (Duplicate, Old &amp; Large Photos)</h3>
+          <p>
+            Smart Cleanup analyzes accessible library photos locally on your phone. No photo is ever deleted automatically; removal occurs strictly when you select specific items and confirm Android’s system deletion prompt.
+          </p>
+        </section>
+
+        <section id="retention" class="policy-section">
+          <span class="section-num">Section 05</span>
+          <h2>Data Storage, Retention &amp; How to Delete Your Data</h2>
+          <p>
+            Because Photo Recovery &amp; Restore maintains no user accounts and operates no external backend servers, 100% of app state resides locally on your Android device under clear retention bounds:
+          </p>
+          <ul>
+            <li><strong>Active Scan Results:</strong> Held in volatile device memory (RAM) while viewing scan results and released when closed.</li>
+            <li><strong>Bounded Inspection Metadata Cache:</strong> To speed up repeat scans, the app stores a size-capped local cache containing relative file identifiers, byte size, modification time, and detected image dimensions. Entries automatically expire after <strong>14 days</strong>.</li>
+            <li><strong>Temporary Carved-Image Cache:</strong> Bounded temporary files created inside the app’s private cache directory during embedded-image inspection are automatically pruned by age and size limits.</li>
+            <li><strong>Preferences, History &amp; Recovery Shield:</strong> Stored locally on your device until you clear or remove them.</li>
+          </ul>
+          <h3>How You Can Delete All App Data Immediately</h3>
+          <ul>
+            <li><strong>Remove Protected Copies:</strong> Open <em>Recovery Shield</em> (or <em>Settings &gt; Recovery Shield &gt; Clear protected copies</em>) inside the app.</li>
+            <li><strong>Erase All App Data &amp; Caches:</strong> Open <strong>Android Settings &gt; Apps &gt; Photo Recovery &amp; Restore &gt; Storage &amp; cache</strong> and tap <strong>Clear storage / Clear data</strong>, or uninstall the application. This permanently deletes all app-private preferences, caches, history records, and Recovery Shield files from your device. (Photos you previously saved to your public Gallery remain safely in your Gallery unless you delete them there.)</li>
+          </ul>
+        </section>
+
+        <section id="sharing" class="policy-section">
+          <span class="section-num">Section 06</span>
+          <h2>Data Sharing, Third-Party Services &amp; Security</h2>
+          <p>
+            <strong>We do not share, sell, rent, trade, or transfer your photos, media metadata, or personal information to any third party.</strong>
+          </p>
+          <ul>
+            <li><strong>No Cloud Servers:</strong> No developer-operated server receives your images, file lists, or usage activity.</li>
+            <li><strong>No Third-Party Ad or Analytics SDKs:</strong> The app contains no advertising SDKs, crash-reporting trackers that upload personal data, or cross-app tracking identifiers.</li>
+            <li><strong>Explicit User Intents Only:</strong> When you tap <em>Rate us</em> (opens Google Play Store) or <em>Share app</em> (opens Android’s system share sheet to share the app’s Google Play link), Android launches the corresponding system app on your device under that platform’s own privacy terms.</li>
+          </ul>
+        </section>
+
+        <section id="data-safety" class="policy-section">
+          <span class="section-num">Section 07</span>
+          <h2>Google Play Data Safety Summary</h2>
+          <p>
+            The table below summarizes how Photo Recovery &amp; Restore aligns with Google Play’s Data Safety disclosures:
+          </p>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Data Category</th>
+                  <th>Accessed Locally?</th>
+                  <th>Collected Off-Device?</th>
+                  <th>Shared with Third Parties?</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Photos &amp; Images</strong><br /><span>Gallery, trash, cache &amp; residual image files</span></td>
+                  <td>Yes — only during user-initiated scan, cleanup, Shield, or restore</td>
+                  <td><span class="status-pill">No — Never</span></td>
+                  <td><span class="status-pill">No — Never</span></td>
+                </tr>
+                <tr>
+                  <td><strong>Personal Identifiers</strong><br /><span>Name, email, phone number, contacts, precise location</span></td>
+                  <td>No — Not requested or read</td>
+                  <td><span class="status-pill">No — Never</span></td>
+                  <td><span class="status-pill">No — Never</span></td>
+                </tr>
+                <tr>
+                  <td><strong>App Preferences &amp; History</strong><br /><span>Theme mode, onboarding flag, local restore URIs</span></td>
+                  <td>Yes — stored in app-private <code>SharedPreferences</code></td>
+                  <td><span class="status-pill">No — Never</span></td>
+                  <td><span class="status-pill">No — Never</span></td>
+                </tr>
+                <tr>
+                  <td><strong>Device or Advertising IDs</strong><br /><span>AAID / GAID, analytics telemetry</span></td>
+                  <td>No — Not accessed</td>
+                  <td><span class="status-pill">No — Never</span></td>
+                  <td><span class="status-pill">No — Never</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section id="children" class="policy-section">
+          <span class="section-num">Section 08</span>
+          <h2>Children’s Privacy</h2>
+          <p>
+            Photo Recovery &amp; Restore is a general-audience device utility and does not knowingly collect, solicit, or transmit personal information from anyone, including children under the age of 13 (or the applicable minimum age in your jurisdiction). Because all image processing occurs locally on the user’s device with zero data collection, no personal data from children is stored by the Developer. Parents or guardians with any questions may contact us using the support email listed in the <a href="#contact">Developer &amp; Contact</a> section below.
+          </p>
+        </section>
+
+        <section id="your-rights" class="policy-section">
+          <span class="section-num">Section 09</span>
+          <h2>Your Privacy Rights (GDPR, CCPA &amp; Global Users)</h2>
+          <p>
+            Regardless of where you live—including the European Economic Area (GDPR), the United Kingdom, California (CCPA/CPRA), Pakistan, or elsewhere—you retain complete ownership and physical custody of your data on your own phone. You can exercise rights of access, restriction, and erasure immediately at any time by revoking Android permissions, clearing app storage, or uninstalling the app, and you may contact us for any privacy assistance without discrimination.
+          </p>
+        </section>
+
+        <section id="changes" class="policy-section">
+          <span class="section-num">Section 10</span>
+          <h2>Changes to This Privacy Policy</h2>
+          <p>
+            If we introduce new features that alter how information is processed, we will update this Privacy Policy and revise the "Effective &amp; Updated" date at the top of this page (as well as our Google Play Console Data Safety declaration) prior to releasing those changes. We encourage you to review this page periodically.
+          </p>
+        </section>
+
+        <section id="contact" class="policy-section contact-card-featured">
+          <span class="section-num">Section 11</span>
+          <h2>Developer &amp; Privacy Contact</h2>
+          <p>
+            If you have any questions, concerns, or requests regarding this Privacy Policy or how Photo Recovery &amp; Restore handles data on your device, please contact the Developer directly:
+          </p>
+          <div class="contact-grid">
+            <div class="contact-item">
+              <span class="contact-label">Developer / Publisher</span>
+              <span class="contact-value">Muhammad Talha</span>
+            </div>
+            <div class="contact-item">
+              <span class="contact-label">Public Support &amp; Privacy Email</span>
+              <a class="contact-value js-public-email" href="#contact">smartscansupport<span>&#64;</span>gmail<span>&#46;</span>com</a>
+              <div>
+                <button type="button" class="copy-btn" id="copyEmailBtn">Copy email address</button>
+              </div>
+            </div>
+            <div class="contact-item">
+              <span class="contact-label">Application &amp; Country</span>
+              <span class="contact-value">Photo Recovery &amp; Restore · Pakistan</span>
+            </div>
+          </div>
+        </section>
+      </article>
+    </div>
+
+    <footer>
+      <p>
+        <strong>Developer:</strong> Muhammad Talha &nbsp;·&nbsp;
+        <strong>Email:</strong> <a class="js-public-email" href="#contact">smartscansupport<span>&#64;</span>gmail<span>&#46;</span>com</a> &nbsp;·&nbsp;
+        <strong>Country:</strong> Pakistan
+      </p>
+      <p>
+        &copy; 2026 <strong>Photo Recovery &amp; Restore (PhotoRecover)</strong>. All rights reserved.
+      </p>
+    </footer>
+  </main>
+  
+
+  <script>
+    (function () {
+      const root = document.documentElement;
+      const toggleBtn = document.getElementById('themeToggle');
+      const themeLabel = document.getElementById('themeLabel');
+      const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+      function applyTheme(theme) {
+        root.setAttribute('data-theme', theme);
+        if (themeLabel) {
+          themeLabel.textContent = theme === 'dark' ? 'Light mode' : 'Dark mode';
+        }
+      }
+
+      applyTheme(prefersDark ? 'dark' : 'light');
+
+      if (toggleBtn) {
+        toggleBtn.addEventListener('click', function () {
+          const next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+          applyTheme(next);
+        });
+      }
+
+      const publicEmail = ['smartscansupport', ['gmail', 'com'].join('.')].join(String.fromCharCode(64));
+      const emailLinks = document.querySelectorAll('.js-public-email');
+      emailLinks.forEach(function (el) {
+        el.textContent = publicEmail;
+        el.setAttribute('href', 'mailto:' + publicEmail);
+      });
+
+      const copyBtn = document.getElementById('copyEmailBtn');
+      if (copyBtn && navigator.clipboard) {
+        copyBtn.addEventListener('click', function () {
+          navigator.clipboard.writeText(publicEmail).then(function () {
+            copyBtn.textContent = 'Copied!';
+            setTimeout(function () {
+              copyBtn.textContent = 'Copy email address';
+            }, 2000);
+          });
+        });
+      }
+
+      const sections = document.querySelectorAll('.policy-section');
+      const navLinks = document.querySelectorAll('.toc-list a');
+      if ('IntersectionObserver' in window && sections.length && navLinks.length) {
+        const observer = new IntersectionObserver(
+          function (entries) {
+            entries.forEach(function (entry) {
+              if (entry.isIntersecting) {
+                const id = '#' + entry.target.id;
+                navLinks.forEach(function (link) {
+                  link.classList.toggle('active', link.getAttribute('href') === id);
+                });
+              }
+            });
+          },
+          { rootMargin: '-20% 0px -70% 0px' }
+        );
+        sections.forEach(function (section) {
+          observer.observe(section);
+        });
+      }
+    })();
+  </script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a50137c01c694dd8',t:'MTc5MjkzMTI3MQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092" integrity="sha512-UKNk8GbxkABxKcXYuLkO16EleLGUkcvJWtpSNmExE0Too3ZaFAxTscNWEc1OdAv5/BikHawapSCaiD2XCmp+Bw==" data-cf-beacon='{"version":"2024.11.0","token":"1954b47c125f43f8b4338b3c4f804e4f","spa":2}' crossorigin="anonymous"></script>
+</body>
+</html>
